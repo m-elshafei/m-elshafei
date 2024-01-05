@@ -7,14 +7,14 @@
 </h3>
 
 <!-- Typing SVG by DenverCoder1 - https://github.com/DenverCoder1/readme-typing-svg -->
-<p align="center">
+<!--<p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com/?lines=back-End%20web%20developer;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22"></a>
-</p> 
+</p> -->
 
 <h4>
 I am a backend web developer.
 
-- I am well versed in using new tools and techniques for website development, and I follow best practices in website development for optimal performance and comfortable user experience. I am also passionate about learning new technologies and developments in the world of web development, and am always working on improving my skills and expanding my knowledge.
+- Experienced software developer specializing in web-based solutions using modern PHP frameworks such as Laravel. With a strong foundation in web development, I have successfully delivered robust and efficient applications that meet client requirements. My expertise lies in leveraging the power of PHP frameworks to create scalable and maintainable solutions.
 
 
 ### Connect with Me :
@@ -38,9 +38,9 @@ I am a backend web developer.
 
 <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=m-elshafei&show_icons=true&locale=en&layout=compact&theme=radical" alt="most used languages" />
 <br><br><br><br><br><br><br>
-<!-- <a href="https://komarev.com/ghpvc/?username=m-shafei&style=for-the-badge">
+ <a href="https://komarev.com/ghpvc/?username=m-shafei&style=for-the-badge">
     <img src="https://komarev.com/ghpvc/?username=m-elshafei&style=for-the-badge">
-</a> -->
+</a> 
 
 
 
