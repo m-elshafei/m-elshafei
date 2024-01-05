@@ -1,5 +1,5 @@
 
-<img width="250" align="right" src="https://c.tenor.com/_DOBjnGspYAAAAAM/code-coding.gif">
+<!--<img width="250" align="right" src="https://c.tenor.com/_DOBjnGspYAAAAAM/code-coding.gif">-->
 
 <h3 align="center">
   Welcome to Moustafa Elshafei's profile!
@@ -7,12 +7,11 @@
 </h3>
 
 <!-- Typing SVG by DenverCoder1 - https://github.com/DenverCoder1/readme-typing-svg -->
-<!--<p align="center">
+<p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com/?lines=back-End%20web%20developer;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22"></a>
-</p> -->
+</p>
 
 <h4>
-I am a backend web developer.
 
 - Experienced software developer specializing in web-based solutions using modern PHP frameworks such as Laravel. With a strong foundation in web development, I have successfully delivered robust and efficient applications that meet client requirements. My expertise lies in leveraging the power of PHP frameworks to create scalable and maintainable solutions.
 
