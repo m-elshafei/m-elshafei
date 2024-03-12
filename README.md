@@ -20,6 +20,8 @@
 
 <a href="https://www.linkedin.com/in/m-elshafei/" target="_blank"><img src="https://img.shields.io/badge/-Moustafa%20Elshafei-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white"/></a>
 <a href="https://t.me/MoustafaElshafei" target="_blank"><img src="https://img.shields.io/badge/-Moustafa%20Elshafei-0077B5?style=for-the-badge&logo=Telegram&logoColor=white"/></a>
+<a href="whatsapp://send?phone=+1067935373"><img src="https://img.shields.io/badge/-Moustafa%20Elshafei-25D366?style=for-the-badge&logo=WhatsApp&logoColor=white"/></a>
+
 ### 🛠 &nbsp;Tech Stack
 
 ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
