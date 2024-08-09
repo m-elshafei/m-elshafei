@@ -1,48 +1,28 @@
-name: Create and Merge Pull Request
+name: Sync develop to main
 
-on:
-  push:
+on: 
+  push: 
     branches:
-      - develop
+      - develop 
 
-jobs:
-  create-pr:
-    runs-on: ubuntu-latest
-    steps:
+jobs: 
+  branch-sync:
+    runs-on: ubuntu-latest 
+    steps: 
       - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v4     
+        with: 
+          fetch-depth: 0 
 
-      - name: Set up Git
-        run: |
+      - name: Set up git 
+        run: | 
           git config --global user.name 'Moustafa Elshafei'
-          git config --global user.email 'moustafaelshafhy@gmail.com'
-
-      - name: Create a Pull Request from develop to main
-        id: pr
-        run: |
-          # Install GitHub CLI
-          sudo apt-get install gh
-
-          # Authenticate GitHub CLI
-          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
-
-          # Create a pull request
-          gh pr create --base main --head develop --title "Sync develop to main" --body "Automated pull request to merge develop into main"
-
-      - name: Merge Pull Request
-        run: |
-          # Install GitHub CLI
-          sudo apt-get install gh
-
-          # Authenticate GitHub CLI
-          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
-
-          # Merge the pull request
-          PR_NUMBER=$(gh pr list --state open --base main --head develop --json number --jq '.[0].number')
-          if [ -n "$PR_NUMBER" ]; then
-            gh pr merge "$PR_NUMBER" --merge --delete-branch
-          else
-            echo "No open pull request found to merge."
-          fi
+          git config --global user.email 'moustafaelshafhy@gmail.com'     
+          
+      - name: Push changes to main when develop is updated
+        if: github.ref == 'refs/heads/develop' 
+        run: | 
+          git fetch origin 
+          git checkout main 
+          git merge develop -X theirs 
+          git push origin main
