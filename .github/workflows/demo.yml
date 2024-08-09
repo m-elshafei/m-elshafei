@@ -6,7 +6,7 @@ on:
       - develop
 
 jobs:
-  create-pr:
+  create-and-merge-pr:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -29,14 +29,10 @@ jobs:
           echo "${{ secrets.MY_GITHUB_TOKEN }}" | gh auth login --with-token
 
       - name: Create a Pull Request from develop to main
-        id: pr
+        id: create_pr
         run: |
           gh pr create --base main --head develop --title "Sync develop to main" --body "Automated pull request to merge develop into main" || echo "Failed to create PR"
 
-      - name: List Open Pull Requests
-        run: |
-          gh pr list --state open --base main --head develop
-          
       - name: Merge Pull Request
         run: |
           PR_NUMBER=$(gh pr list --state open --base main --head develop --json number --jq '.[0].number')
