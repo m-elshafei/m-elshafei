@@ -26,7 +26,7 @@ jobs:
           sudo apt-get install gh
 
           # Authenticate GitHub CLI
-          echo "${{ secrets.MY_GITHUB_TOKEN }}" | gh auth login --with-token
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
 
           # Create a pull request
           gh pr create --base main --head develop --title "Sync develop to main" --body "Automated pull request to merge develop into main"
@@ -37,7 +37,7 @@ jobs:
           sudo apt-get install gh
 
           # Authenticate GitHub CLI
-          echo "${{ secrets.MY_GITHUB_TOKEN }}" | gh auth login --with-token
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
 
           # Merge the pull request
           PR_NUMBER=$(gh pr list --state open --base main --head develop --json number --jq '.[0].number')
