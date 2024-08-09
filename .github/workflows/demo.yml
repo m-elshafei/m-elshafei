@@ -1,9 +1,9 @@
-name: Sync master to develop
+name: Sync main to develop
 
 on: 
   push: 
     branches:
-      - master 
+      - main 
 
 jobs: 
   branch-sync:
@@ -19,10 +19,10 @@ jobs:
           git config --global user.name 'Moustafa Elshafei'
           git config --global user.email 'moustafaelshafhy@gmail.com'     
           
-      - name: Push changes to develop when master is updated
-        if: github.ref == 'refs/heads/master' 
+      - name: Push changes to develop when main is updated
+        if: github.ref == 'refs/heads/main' 
         run: | 
           git fetch origin 
           git checkout develop 
-          git merge master -X theirs 
+          git merge main -X theirs 
           git push origin develop
