@@ -1,34 +1,35 @@
-name: Merge Develop to Master
+name: Merge develop to master
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - develop
 
 jobs:
-  merge:
+  merge-develop-to-master:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout develop branch
+        uses: actions/checkout@v2
         with:
           ref: develop
-          persist-credentials: true
-
-      - name: Merge Master into Develop
-        run: |
-          git checkout develop
-          git merge origin/master --no-ff
-
-      - name: Checkout Master and merge Develop
-        run: |
-          git checkout master
-          git merge develop --no-ff
 
       - name: Configure Git
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@github.com"
 
-      - name: Push changes
+      - name: Fetch all branches
+        run: git fetch --all
+
+      - name: Checkout master branch
+        run: git checkout master
+
+      - name: Merge develop into master
+        run: git merge develop --no-ff
+
+      - name: Push changes to master
         run: git push origin master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: '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'
