@@ -31,7 +31,7 @@
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;
 ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;
 ![Sass](https://img.shields.io/badge/-MysqlDB-05122A?style=flat&logo=mysql)&nbsp;
-![GraphQL](https://img.shields.io/badge/-Bootstrap-05122A?style=flat&logo=bootstrap)&nbsp;
+<!-- ![GraphQL](https://img.shields.io/badge/-Bootstrap-05122A?style=flat&logo=bootstrap)&nbsp; -->
 
 
 
