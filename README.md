@@ -31,17 +31,17 @@
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;
 ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;
 ![Sass](https://img.shields.io/badge/-MysqlDB-05122A?style=flat&logo=mysql)&nbsp;
-<!-- ![GraphQL](https://img.shields.io/badge/-Bootstrap-05122A?style=flat&logo=bootstrap)&nbsp; -->
+![GraphQL](https://img.shields.io/badge/-Bootstrap-05122A?style=flat&logo=bootstrap)&nbsp;
 
 
 
 
 
-<!-- <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=m-elshafei&show_icons=true&locale=en&layout=compact&theme=radical" alt="most used languages" />
-<br><br><br><br><br><br><br> -->
-<!-- <a href="https://komarev.com/ghpvc/?username=m-shafei&style=for-the-badge">
+<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=m-elshafei&show_icons=true&locale=en&layout=compact&theme=radical" alt="most used languages" />
+<br><br><br><br><br><br><br>
+<a href="https://komarev.com/ghpvc/?username=m-shafei&style=for-the-badge">
     <img src="https://komarev.com/ghpvc/?username=m-elshafei&style=for-the-badge">
-</a> -->
+</a>
 
 
 
