@@ -1,4 +1,4 @@
-name: Merge develop to master
+name: Create Pull Request from develop to master
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - develop
 
 jobs:
-  merge-develop-to-master:
+  create-pull-request:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,21 +15,23 @@ jobs:
         with:
           ref: develop
 
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "actions@github.com"
-
       - name: Fetch all branches
         run: git fetch --all
 
       - name: Checkout master branch
         run: git checkout master
 
-      - name: Merge develop into master
-        run: git merge develop --no-ff
+      - name: Attempt to Merge develop into master
+        run: |
+          git merge develop --no-ff || echo "Merge conflict detected, creating a pull request."
+        continue-on-error: true
 
-      - name: Push changes to master
-        run: git push origin master
-        env:
-          GITHUB_TOKEN: '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'
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: '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'
+          base: master
+          head: develop
+          title: 'Automatic Pull Request: Merge develop into master'
+          body: |
+            This pull request was created automatically because a merge conflict was detected when attempting to merge `develop` into `master`. Please review and resolve the conflicts.
